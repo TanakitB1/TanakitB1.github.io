@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f5f6fa;
+        }
+
+        .resume-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px;
+            background-color: #8ea5f6fe;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Lighter shadow */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        
+        .left-section {
+            background-color: #00229091;
+            color: #fff;
+            width: 35%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .profile-image img {
+            width: 120px;
+            height: 110px;
+            border-radius: 30%;
+            border: 4px solid #ffffff;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.1);
+        }
+
+        .section-title h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #000000;
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 10px;
+        }
+
+        .contact-info, ul {
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .right-section {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .right-section h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6a0404;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .experience-item, .project-item {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item h3, .project-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-item p, .project-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #fbc900;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+            }
+
+            .left-section, .right-section {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-section">
+            <div class="profile-image">
+                <img src="E:\Html\GGWP.png" width="100px">
+                <h1>นายธนกฤต แซ่จ๋าว</h1>
+            </div>
+            <div class="section-title"><h2>เกี่ยวกับฉัน</h2></div>
+            <h3>ความใฝ่ฝัน</h3>
+            <p> ตั้งเป้าหมายเล็กๆ เช่น อยากทำระบบให้เร็วขึ้น หรือเขียนสคริปต์ที่ทำให้งานที่เคยต้องมานั่งทำเองกลายเป็นอัตโนมัติ 
+                หรือแม้กระทั่งได้ลองพัฒนาไอเดียใหม่ๆ ในการจัดการคลาวด์ มันเหมือนกับการทำให้ระบบเป็นของเรา และได้เห็นมันทำงานได้ดีขึ้นเรื่อยๆ เพราะฝีมือเราเอง</p>
+            
+            <p>สิ่งที่กำลังสนใจ : การเขียนเว็บและสร้าง API</p>
+            <p>งานอดิเรก : ทำอาหารและปลูกต้นไม้</p>
+            <h4>My github</h4> 
+            <a href="https://github.com/TanakitB1/TanakitB1" target="_blank">TanakitB1</a>
+            <div class="contact-info">
+                <p><strong>โทร:</strong> 063-886-1685</p>
+                <p><strong>อีเมล:</strong>66020767@up.ac.th</p>
+                <p><strong>ที่อยู่:</strong> อำเภอ : แม่สอด จังหวัด:ตาก ประเทศ:ไทย</p>
+            </div>
+            <div class="section-title"><h2>การศึกษา</h2></div>
+            <p>กำลังศึกษาที่ : มหาวิทยาลัยพะเยา </p>
+            <div class="section-title"><h2>ทักษะ</h2></div>
+            <ul>
+                <li>Python</li>
+                <li>HTML, CSS</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Pascal</li>
+            </ul>
+            <div class="section-title"><h2>ภาษา</h2></div>
+            <p>อังกฤษ : A1 </p>
+        </div>
+
+        <div class="right-section">
+            <h3>PROGRAMMER (Back-End)</h3>
+            <div class="section-title"><h2>ประสบการณ์</h2></div>
+            <div class="experience-item">
+                <h3>ออกแบบหน้าใช้งานติดต่อผู้ซื้อระบบ ระบบป้ายประชาสัมพันธ์อัจฉริยะ </h3>
+                <p>สร้างและออกแบบ wireframe และ prototype ด้วย Figma </p>
+            </div>
+            <div class="experience-item">
+                <h3>ออกแบบฐานข้อมูล ระบบป้ายประชาสัมพันธ์อัจฉริยะ </h3>
+                <p>ออกแบบและสร้างฐานข้อมูลสำหรับระบบป้ายประชาสัมพันธ์อัจฉริยะ โดยใช้ออกแบบเพื่อสร้างฐานข้อมูล </p>
+            </div>
+            <div class="section-title"><h2>โปรเจคปัจจุบัน</h2></div>
+            <div class="project-item">
+                <h3>API วิเคราะห์และจำแนกวัตถุ </h3>
+                <p>เป็นระบบ API สำหรับการจำแนกวัตถุในภาพโดยใช้เทคนิค Machine Learning</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
